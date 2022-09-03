@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ovi player</title>
+    <link rel="shortcut icon" type="image/png" href="images/oviplayer.png">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="topBar">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <span>Now Playing</span>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="imageArea">
+            <img src="" alt="">
+        </div>
+        <div class="songInfo">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" class="fas fa-redo-alt" title="repeat"></i>
+            <i id="prev" class="fa fa-step-backward"></i>
+            <div class="play-pause">
+                <i class="fas fa-play" id="play"></i>
+            </div>
+            <i id="next" class="fas fa-step-forward"></i>
+            <i id="moreMusic" class="fas fa-bars"></i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="fa fa-music" aria-hidden="true "></i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="fa fa-times" aria-hidden="true "></i>
+            </div>
+            <ul></ul>
+        </div>
+
+    </div>
+    <script src="js/music-list.js "></script>
+    <script src="js/script.js "></script>
+</body>
+
+
+</html>
